@@ -1,7 +1,7 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Capstone: Unaccounted Homeless Individuals in New York City
 
 
-<img src="../images/Homeless Sign.jpg" width="300px">
+<img src="./images/Homeless_Sign.jpg" width="600px">
 
 (Artist: Willie Baronet)
 
@@ -18,9 +18,9 @@
 
 You are walking down the street and you see a woman, man, or child sitting on the ground with a sign asking to give donations. According to [the coalition for the homeless](https://www.coalitionforthehomeless.org/basic-facts-about-homelessness-new-york-city/), in November 2019, there were 63,092 homeless people, including 14,973 homeless families with 22,258 homeless children, sleeping each night in the New York City municipal shelter system. These are just the individuals that are accounted for. The coalition for the homeless also states that each night thousands of unsheltered homeless people sleep on New York City streets, in the subway system, and in other public spaces. Therefore, according to [the methodology of counting the homeless](https://www.ncbi.nlm.nih.gov/books/NBK218229/), when counts have been attempted, they have been local in scope, and problems with the enumeration methods have not been widely discussed.
 
-Using machine learning, **how accutately can we predict for the unaccounted homeless individuals that do not use the shelter system in New York City?** 
+Using machine learning, **how accurately can we predict for the unaccounted homeless individuals that do not use the shelter system in New York City?** 
 
-*How do we investigate this problem?* We have to explore demographic, economic, personal, and geographic features that increases the likelihood for homeless individuals becoming unaccounted. Then, we will use regression models, time series models, and unsupervised learning models to determine our results. We will select the best model by using a mertic of accuracy. Regression has r^2 scores, time series has tbh scores, and unsupervised learning has silhouette scores.
+*How do we investigate this problem?* We have to explore demographic, economic, personal, and geographic features that increases the likelihood for homeless individuals becoming unaccounted. Then, we will use regression models, time series models, and unsupervised learning models to determine our results. We will select the best model by using a metric of accuracy. Regression has r^2 scores, time series has tbh scores, and unsupervised learning has silhouette scores.
 
 ---
 
