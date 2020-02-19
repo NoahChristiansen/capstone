@@ -36,7 +36,27 @@ Using machine learning, **how accurately can we predict for the unaccounted home
 
 ### Sources
 
+- [DHS Daily Count](https://data.cityofnewyork.us/Social-Services/DHS-Daily-Report/k46n-sa2m)
+
+- [State of Homelessness](https://endhomelessness.org/homelessness-in-america/homelessness-statistics/state-of-homelessness-report/)
+
+- [Homelessness Count - USA](https://catalog.data.gov/dataset/homelessness-count-usa)
+
+- [Buildings by Borough and Community District](https://data.cityofnewyork.us/Social-Services/Buildings-by-Borough-and-Community-District/3qem-6v3v)
+
+- [The State of Homelessness in NYC](https://council.nyc.gov/data/homeless/)
+
+- [FY 2019 Fair Market Rent Documentation System](https://www.huduser.gov/portal/datasets/fmr/fmrs/FY2019_code/2019summary.odn)
+
+- [HOMELESSNESS PREDICTION MODEL](https://www.huduser.gov/portal/datasets/hpmd.html)
+
+- [NYC Homeless Outreach Population Estimate (HOPE)](https://www1.nyc.gov/assets/dhs/downloads/pdf/hope-2019-results.pdf)
+
+- [Three-Quarter Housing Report - Placements](https://data.cityofnewyork.us/City-Government/Three-Quarter-Housing-Report-Placements/vntq-qu86)
+
 - [Basic Facts About NYC homelessness](https://www.coalitionforthehomeless.org/basic-facts-about-homelessness-new-york-city/)
+
+- [DOHMH Community Mental Health Survey](https://data.cityofnewyork.us/Health/DOHMH-Community-Mental-Health-Survey/wi3r-8uzb)
 
 - [NYT article about homelessness](https://www.nytimes.com/2019/05/30/nyregion/homeless-nyc.html)
 
@@ -55,7 +75,6 @@ Using machine learning, **how accurately can we predict for the unaccounted home
 - [2019 PIT Estimate of Veteran Homelessness in the U.S.](https://www.hudexchange.info/resource/5877/2019-pit-estimate-of-veteran-homelessness-in-the-us/)
 
 - [311 Service Requests from 2010 to Present](https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9/data)
-
 - [Shelter Repair Scorecard](https://data.cityofnewyork.us/Social-Services/Shelter-Repair-Scorecard/dvaj-b7yx/data)
 
 - [Capital Improvement Evictions](https://www.antievictionmap.com/capital-improvement-evictions-san-francisco/)
@@ -75,4 +94,8 @@ Using machine learning, **how accurately can we predict for the unaccounted home
 
 - [Predicting Homeless Shelter Entry](https://www1.nyc.gov/site/cidi/projects/predicting-homeless-shelter-entry.page)
 
-- [Homelessness Prevention](https://www1.nyc.gov/site/hra/help/homelessness-prevention.page)
+- [Homelessness Prevention](https://www1.nyc.gov/site/hra/help/homelessness-prevention.page) 
+
+- [Housing New York Units by Building](https://data.cityofnewyork.us/Housing-Development/Housing-New-York-Units-by-Building/hg8x-zxpr/data) 
+
+- [Local Law 37 - DHS Report](https://data.cityofnewyork.us/Social-Services/Local-Law-37-DHS-Report/2mqz-v5im)
