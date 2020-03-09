@@ -9,7 +9,6 @@
 
 - [Problem Statement](#Problem-Statement)
 - [Executive Summary](#Executive-Summary)
-- [Data Dictionary](#Data-Dictionary)
 - [Conclusions and Recommendations](#Conclusions-and-Recommendations)
 - [Sources](#Sources)
 
@@ -27,17 +26,13 @@ We could use a [dataset](https://www.kaggle.com/c/tmdb-box-office-prediction/dat
 
 We began by importing the two data sets, training and testing, from The Movie Database. We have two datasets because our training dataset needed to be fitted on our testing dataset to be able to evaluate our model. Both datasets have twenty three feature columns of a particular movie. However, the training data set had an additional column called revenue which was our target variable.
 
-Once, we looked through the dataframes, we did some data cleaning. We dropped unrelated features, dealt with missing and zero values, fixed datatypes, and extracted data from specific features. Then, we inspected that our observations were not complete for our modeling, so we decided to completely change our datasets into numerical data. We used one-hot encoding for the selected categorical features and used a numerical rating structure for other selected features. After cleaning our datasets, we were ready to do some exploratory data analysis.
+Once, we looked through the dataframes, we did some data cleaning. We dropped unrelated features, dealt with missing values, fixed datatypes, and extracted data from specific features. Then, we inspected that our observations were not complete for our modeling, so we decided to completely change our datasets into numerical data. We used one-hot encoding for the selected categorical features and used a numerical rating structure for other selected features. After cleaning our datasets, we were ready to do some exploratory data analysis.
 
 In our exploratory data analysis we used our training data set because it has the target variable to compare to. We checked for the summary statistics and as a result, we visualized selected features' distributions. Then, we investigated the correlation of each original numerical feature and mapped features with respect to our target variable. In other words, we used visualizations to see these particular correlations. Finally, we determined the outliers.
 
 Next, we were able to preprocess. From our exploratory data analysis, we featured engineered. (explain here) Then, we created our X feature & target variable and did a train-test split. Lastly, we determined the basline score to compare to our models' results.
 
 Finally, we were able to model. We modeled various regression models. We modeled (what models?) In the end, we focused on accuracy score and the bias-variance tradeoff from each model to determined which model was the best to answer our problem statement.
-
----
-
-### Data Dictionary
 
 ---
 
