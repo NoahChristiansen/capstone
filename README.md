@@ -9,6 +9,7 @@
 
 - [Problem Statement](#Problem-Statement)
 - [Executive Summary](#Executive-Summary)
+- [Data Dictionary](#Data-Dictionary)
 - [Conclusions and Recommendations](#Conclusions-and-Recommendations)
 - [Sources](#Sources)
 
@@ -18,7 +19,7 @@
 
 According to the [Domestic Movie Theatrical Market Summary 1995 to 2020](https://www.the-numbers.com/market/), in 2019, there was about 1.24 billion Movie Tickets sold in the North American Region. If you think about it, that was just a fraction of what the Worldwide Tickets sales were in 2019. Given that information, one could now assume that there must be a great deal of money going to the Movie Industry. So how do we, as Movie Lovers, determine this amount of cash flow? We will have to focus on the Movie's revenue. In other words, **can we predict a Movie's Worldwide Box Office revenue?**
 
-We could use a [dataset](https://www.kaggle.com/c/tmdb-box-office-prediction/data) with over 7,000 past films from [The Movie Database](https://www.themoviedb.org/) that has selected features. In particular, those features are cast, crew, plot keywords, budget, posters, release dates, languages, production companies, countries and others. Then we select the appropriate features to train various regression models with custom hyperparameters. Afterwards, we will use our models' accuracy scores to determine the best model to answer this inquiry.
+We could use a [dataset](https://www.kaggle.com/c/tmdb-box-office-prediction/data) with over 7,000 past films from [The Movie Database](https://www.themoviedb.org/) that has selected features. In particular, those features are cast, crew, plot keywords, budget, posters, release dates, languages, production companies, countries and others. Then we select the appropriate features to train various regression models with custom hyperparameters. Afterwards, we will use our models' $R^2$ scores to determine the best model to answer this inquiry.
 
 ---
 
@@ -33,6 +34,10 @@ In our exploratory data analysis we used our training data set because it has th
 Next, we were able to preprocess. From our exploratory data analysis, we featured engineered. (explain here) Then, we created our X feature & target variable and did a train-test split. Lastly, we determined the basline score to compare to our models' results.
 
 Finally, we were able to model. We modeled various regression models. We modeled (what models?) In the end, we focused on accuracy score and the bias-variance tradeoff from each model to determined which model was the best to answer our problem statement.
+
+---
+
+### Data Dictionary
 
 ---
 
