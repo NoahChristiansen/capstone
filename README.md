@@ -28,11 +28,11 @@ We could use a [dataset](https://www.kaggle.com/c/tmdb-box-office-prediction/dat
 
 We began by importing the two data sets, training and testing, from The Movie Database. We have two datasets because our training dataset needed to be fitted on our testing dataset to be able to evaluate our model. Both datasets have twenty three feature columns of a particular movie. However, the training data set had an additional column called revenue which was our target variable.
 
-Once, we looked through the dataframes, we did some data cleaning. We dropped unrelated features, dealt with missing values, fixed datatypes, and extracted data from specific features. Then, we inspected that our observations were not complete for our modeling, so we decided to completely change our datasets into numerical data. We used one-hot encoding for the selected categorical features and used a numerical rating structure for other selected features. As a result, we had to featured engineered. After cleaning our datasets, we were ready to do some exploratory data analysis.
+Once, we looked through the dataframes, we did some data cleaning. We dropped unrelated features, dealt with missing values, fixed datatypes, and extracted data from specific features. Then, we inspected that our observations were not complete for our modeling, so we decided to completely change our datasets into numerical data. We used one-hot encoding for the selected categorical features and used a numerical rating structure for other selected features. As a result, we had to feature engineered. After cleaning our datasets, we were ready to do some exploratory data analysis.
 
-In our exploratory data analysis we used our training dataset because it had the target variable to compare to. We checked for the summary statistics. Then, we investigated the target variable by exploring it's distribution. Then, as a result from our summary statistics analysis, we investigated selected univariate distributions. Then, we investigated correlations from selected features with the target variable. Then, we will explored the binary features' frequency count. Then, we investigated datetime features to see if time was an important factor. Finally, we determined the outliers.
+In our exploratory data analysis we used our training dataset because it had the target variable to compare to. We first checked for the summary statistics. Then, we investigated the target variable by exploring it's distribution. Then, as a result from our summary statistics analysis, we investigated selected univariate distributions. Then, we investigated correlations from selected features with the target variable. Then, we will explored the binary features' frequency count. Then, we investigated datetime features to see if time was an important factor. Finally, we determined the outliers.
 
-Next, we were able to preprocess. We began by setting the columns in each dataset equal to one another to be able to model. Then, we created our X features and y. Then, we train-test split. Then, we scaled our data for future use. Lastly, we determined the baseline score.
+Next, we were able to preprocess. We began by making sure the columns in each dataset equal to one another to be able to model. Then, we created our X features and y. Then, we train-test split. Then, we scaled our data for future use. Lastly, we determined the baseline score.
 
 Finally, we were able to model. We modeled various regression models. We modeled Linear Regression with default hyperparameters, GridSearch on Ridge Regression, GridSearch on Lasso Regression, GridSearch on DecisionTreeRegressor, BaggedRegressor with default hyperparameters, GridSearch on RandomForestRegressor, GridSearch on AdaBoostRegressor, GridSearch on GradientBoostingRegressor, GridSearch on SVR, and GridSearch on VotingRegressor. 
 
@@ -52,7 +52,7 @@ We had an [original data dictionary](https://www.kaggle.com/c/tmdb-box-office-pr
 |original_title|object|The name of the movie originally.|
 |popularity|float64|The likeability score for the movie.|
 |release_date|datetime64[ns]|The date the movie was released to the public.|
-|runtime|float64|The full amount of time for the movie in minutes.|
+|runtime|float64|The full amount of time of the movie in minutes.|
 |title|object|The name of the movie now.|
 |month_release_date|int64|The month the movie was release to the public.|
 |year_release_date|int64|The year the movie was release to the public.|
@@ -62,7 +62,7 @@ We had an [original data dictionary](https://www.kaggle.com/c/tmdb-box-office-pr
 |nbcuniversal_production_company|int64|The list of NBCUniversal own compaines.|
 |sony_pictures_production_company|int64|The list of Sony Pictures own compaines.|
 |paramount_pictures_production_company|int64|The list of Paramount Pictures own compaines.|
-|top_twenty_keywords|int64|The list of the top twenty keywords individuals use to look for movies.|
+|top_twenty_keywords|int64|The list of the top twenty keywords individuals use to identify movies.|
 |genres_dummies|int64|Dummy features of the `genres` feature. Genres are various forms of categories or classifications or groups of movies.|
 |production_countries_dummies|int64|Dummy features of the `production countries` feature. Production countries are where movies were filmed at.|
 |spoken_languages_dummies|int64|Dummy features of the `spoken_languages` feature. Spoken languages is the available audio the movie can be in.|
@@ -91,9 +91,9 @@ We had an [original data dictionary](https://www.kaggle.com/c/tmdb-box-office-pr
 
 Most of the regression models surpassed the baseline accuracy. However, SVR was not able to and in effect, could on be considered for answering our problem statement. Therefore, the best model was the **VotingRegressor** Model. We were able to combined three emsemble models: BaggingRegressor, RandomForestRegressor, and GradientBoostingRegressor in this algorithm. According to the testing $R^2$ score, the VotingRegressor was able to manage well with unknown data. However, the model was still overfit because it had low bias and high variance.
 
-Despite the overfitting, this model can be use to predict the revenue of a movie given that we know the selected features of that particular movie. The two top features production companies should consider to focus on to get a return on their investments should be the `budget` and `popularity` features. This is the case because these features were consistently the top two correlated features with the target variable. 
+Despite the overfitting, this model can be use to predict the revenue of a movie given that we know the selected features of that particular movie. The two top features that production companies should consider to focus on to get a return on their investments should be the `budget` and `popularity` features. This is the case because these features were consistently the top two correlated features with the target variable. 
 
-Yet, the VotingRegressor still had its limitations. We can not fully interpret it because we are only given back the average from various models. Also, if we use the wrong ensemble method for our setting, we are not going to do better. In other words, we have to determine the models we use based off the bias-variance trade off to really benefit from the VotingRegressor. 
+Yet, the VotingRegressor still had its limitations. We can not fully interpret it because we are only given back the average from various models. Also, if we use the wrong ensemble method for setting up the model, we will not improve our scores. In other words, we have to determine the models we use based off the bias-variance trade off to really benefit from the VotingRegressor. 
 
 In addition, our model can improve it's $R^2$ score if we further tuned our hyperparameters and eliminated more outliers. 
 
