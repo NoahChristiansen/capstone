@@ -105,9 +105,9 @@ All of the regression models surpassed the baseline accuracy. Therefore, the bes
 
 Despite the overfitting, this model can be use to predict the revenue of a US movie given that we know the selected features of that particular movie. The top two features that production companies should consider to focus on to get a return on their investments should be the `budget` and `popularity` features. This is the case because these features were consistently the top two correlated features with the target variable. Also, production companies should consider investing in `genre_adventure` because that movie genre was our outliers with extremely high revenue and it was the third highest coefficient in our regularized models. 
 
-Yet, the RandomForestRegressor still had its limitations. We can not fully interpret it because it does not predict beyond the range of the training data. Also, it created an overfit on our dataset because it cannot handle the noise. In other words, additional noise features could hindered our models results.
+Yet, the RandomForestRegressor still had its limitations. We can not fully interpret it because it does not predict beyond the range of the training data. Also, it created an overfit on our dataset because it cannot handle the noise. In other words, additional noise features could hindered our model's results.
 
-We can improve our model's $R^2$ scores, if we further tuned our hyperparameters and eliminated more outliers.
+We can improve our model's $R^2$ scores, if we further tuned our hyperparameters mand eliminated more outliers.
 
 In the end, we still have lingering questions we need to ask:
 - Can we use a Convolutional Neural Network on the image data as part of a transfer learning process to engineer additional features in our prediction model?
