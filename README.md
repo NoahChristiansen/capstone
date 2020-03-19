@@ -27,7 +27,7 @@ We could use a [dataset](https://www.kaggle.com/c/tmdb-box-office-prediction/dat
 
 ### Outside Research
 
-On [The Movie Database](https://www.themoviedb.org/) website, Moive Seekers can gain a lot of information about moives and television shows. If we want to gain access to details about a particular movie, we can either click on the movie's poster or search it up on the website's database. Once we have access to a particular movie, we are able to see the title, poster, user score, overview, full cast & crew, status, original language, runtime, budget, genres, key words, content score, and revenue if already released. Also, we are able to see reviews and create discussions about a particular movie. In other words, it is a Movie Lovers dream. With that in mind, most of these factors can help us with determining how much money a movie will make after it is out in the United States Box Office. 
+On [The Movie Database](https://www.themoviedb.org/) website, Moive Seekers can gain a lot of information about moives and television shows. If we want to gain access to details about a particular movie, we can either click on the movie's poster or search it up on the website's database. Once we have access to a particular movie, we are able to see the title, poster, user score, overview, full cast & crew, status, original language, runtime, budget, genres, keywords, content score, and revenue if already released. Also, we are able to see reviews and create discussions about a particular movie. In other words, it is a Movie Lovers dream. With that in mind, most of these factors can help us with determining how much money a movie will make after it is out in the United States Box Office. 
 
 To emphasize, according to [Movies: What determines the success of a movie (by box office revenue)?](https://www.quora.com/Movies-What-determines-the-success-of-a-movie-by-box-office-revenue), many factors can determine the Box Office success of a film such as the popularity of the film's content, the current popularity of the film's genre, the current popularity of the film's stars, the strength of the film's marketing campaign, and the strength of the film's distribution as well as its release schedule. As a result, popularity and budgeting seem like key factors that can influence a movie's revenue. 
 
@@ -51,7 +51,7 @@ Next, we were able to do some exploratory data analysis. First, we checked the s
 
 Before we modeled, we needed to do some preparation. We began by creating our X features and y. Then, we train-test split. Lastly, we determined the baseline scores. We used the DummyRegressor model to obtain these values.
 
-Finally, we were able to model. We modeled various regression models. We modeled Linear Regression with default hyperparameters and Ridge Regression, Lasso Regression, BaggedRegressor, & RandomForestRegressor with tuned hyperparameters. Then we supplemented the models with visualizations. We graphed the predictive values with respected to the actual values and explored some of the models' coefficients. 
+Finally, we were able to model. We modeled various regression models. We modeled Linear Regression with default hyperparameters and Ridge Regression, Lasso Regression, ElasticNet Regression, BaggedRegressor, & RandomForestRegressor with tuned hyperparameters. Then we supplemented the models with visualizations. We graphed the predictive values with respected to the actual values and explored some of the models' coefficients. 
 
 In the end, we focused on the $R^2$ scores, RMSE metrics, and the bias-variance tradeoff from each model to determine which model was the best to answer our problem statement.
 
@@ -107,7 +107,7 @@ Despite the overfitting, this model can be use to predict the revenue of a US mo
 
 Yet, the RandomForestRegressor still had its limitations. We can not fully interpret it because it does not predict beyond the range of the training data. Also, it created an overfit on our dataset because it cannot handle the noise. In other words, additional noise features could hindered our models results.
 
-We can improve our model's $R^2$ scores, if we further tuned our hyperparameters, and eliminated more outliers.
+We can improve our model's $R^2$ scores, if we further tuned our hyperparameters and eliminated more outliers.
 
 In the end, we still have lingering questions we need to ask:
 - Can we use a Convolutional Neural Network on the image data as part of a transfer learning process to engineer additional features in our prediction model?
